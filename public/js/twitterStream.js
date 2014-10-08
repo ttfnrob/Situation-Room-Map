@@ -73,14 +73,12 @@ function initialize(searchTerm) {
   });
   var gradient = [
     'rgba(255,255,255,0)',
-    'rgba(255,255,255,0.1)',
-    'rgba(255,255,255,0.2)',
-    'rgba(210,253,254,0.3)',
-    'rgba(30,244,248,0.4)',
+    'rgba(210,253,254,0.5)',
+    'rgba(30,244,248,0.5)',
     'rgba(32,248,158,0.5)',
-    'rgba(33,249,152,0.66)',
-    'rgba(51,255,75,0.66)',
-    'rgba(51,255,75,0.66)'
+    'rgba(33,249,152,0.5)',
+    'rgba(51,255,75,0.5)',
+    'rgba(51,255,75,0.5)'
   ]
   heatmapPos.set('gradient', heatmapPos.get('gradient') ? null : gradient);
   heatmapPos.setMap(map);
@@ -94,14 +92,12 @@ function initialize(searchTerm) {
   });
   var gradient = [
     'rgba(255,255,255,0)',
-    'rgba(255,255,255,0.1)',
-    'rgba(255,255,255,0.2)',
-    'rgba(250,247,213,0.3)',
-    'rgba(232,213,46,0.4)',
+    'rgba(250,247,213,0.25)',
+    'rgba(232,213,46,0.5)',
     'rgba(234,134,46,0.5)',
-    'rgba(236,128,46,0.66)',
-    'rgba(255,50,50,0.66)',
-    'rgba(255,50,50,0.66)'
+    'rgba(236,128,46,0.5)',
+    'rgba(255,50,50,0.5)',
+    'rgba(255,50,50,0.5)'
   ]
   heatmapNeg.set('gradient', heatmapNeg.get('gradient') ? null : gradient);
   heatmapNeg.setMap(map);
