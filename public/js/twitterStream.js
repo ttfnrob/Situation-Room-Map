@@ -26,6 +26,10 @@ function initialize(searchTerm) {
     searchTerm = $("#searchBox").val();
   }
 
+  if !(typeof getUrlParameter('hide') === 'undefined') {
+    hideInterface();
+  }
+
   $("#mapButton").click(function() {
     initialize();
   });
