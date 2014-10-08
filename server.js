@@ -11,10 +11,10 @@ var twitter = require('twitter'),
 
 //Setup twitter stream api
 var twit = new twitter({
-  consumer_key: config.get('twitter.consumer_key'),
-  consumer_secret: config.get('twitter.consumer_secret'),
-  access_token_key: config.get('twitter.access_token_key'),
-  access_token_secret: config.get('twitter.access_token_secret')
+  consumer_key: config.twitter.consumer_key,
+  consumer_secret: config.twitter.consumer_secret,
+  access_token_key: config.twitter.access_token_key,
+  access_token_secret: config.twitter.access_token_secret
 }),
 stream = null;
 
