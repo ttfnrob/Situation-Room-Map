@@ -46,7 +46,6 @@ function initialize(searchTerm) {
     zoom: 2,
     center: myLatlng,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
-    mapTypeControl: true,
     mapTypeControl: false,
     streetViewControl: false,
     panControl: false,
