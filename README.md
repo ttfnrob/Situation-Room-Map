@@ -1,3 +1,5 @@
+![screenshot example of map](https://raw.github.com/ttfnrob/Situation-Room-Map/master/screenshot.png)
+
 # 'Situation Room' Map
 
 Map to display realtime sentiment-processed results of searches across Social Machines. For now it just uses the Twitter streaming API. Datasift integration has been tried and would work. NodeJS app based on [safesoftware's GitHub repo](https://github.com/safesoftware/twitter-streaming-nodejs/) using [Sentimental](https://github.com/thinkroth/Sentimental) and hosted on [Heroku](https://www.heroku.com).
