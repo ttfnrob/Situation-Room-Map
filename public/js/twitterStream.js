@@ -108,10 +108,12 @@ function initialize(searchTerm) {
       var pattern = new RegExp('\\b' + searchTerm + '\\b', 'i');
       if (pattern.test(data.text) == true) {
         if (data.sentiment.score > 0) {
-          liveTweetsPos.push(tweetLocation);
+          liveTweetsPos.push({location: tweetLocation, weight: 1});
+          liveTweetsNeg.push({location: tweetLocation, weight: 0});
         }
         if (data.sentiment.score < 0) {
-          liveTweetsNeg.push(tweetLocation);
+          liveTweetsNeg.push({location: tweetLocation, weight: 1});
+          liveTweetsPos.push({location: tweetLocation, weight: 0});
         }
       }
 
