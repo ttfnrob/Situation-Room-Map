@@ -7,7 +7,7 @@ var twitter = require('twitter'),
     server = http.createServer(app),
     io = require('socket.io').listen(server),
     analyze = require('Sentimental').analyze,
-    config = require('config');
+    config = require('config-heroku');
 
 //Setup twitter stream api
 var twit = new twitter({

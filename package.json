@@ -15,6 +15,6 @@
     "socket.io": "*",
     "Sentimental": "*",
     "datasift-node": "*",
-    "config": "*"
+    "config-heroku": "~0.1.1-a"
   }
 }
