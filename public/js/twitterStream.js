@@ -1,5 +1,4 @@
-function getUrlParameter(sParam)
-{
+function getUrlParameter(sParam){
     var sPageURL = window.location.search.substring(1);
     var sURLVariables = sPageURL.split('&');
     for (var i = 0; i < sURLVariables.length; i++) 
@@ -11,6 +10,11 @@ function getUrlParameter(sParam)
         }
     }
 }  
+
+function hideInterface() {
+  $("#searchBox").hide();
+  $("#mapButton").hide();
+}
 
 function initialize(searchTerm) {
   
@@ -43,10 +47,9 @@ function initialize(searchTerm) {
     center: myLatlng,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
     mapTypeControl: true,
-    mapTypeControlOptions: {
-      style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
-      position: google.maps.ControlPosition.LEFT_BOTTOM
-    },
+    mapTypeControl: false,
+    streetViewControl: false,
+    panControl: false,
     styles: light_grey_style
   };
   var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
