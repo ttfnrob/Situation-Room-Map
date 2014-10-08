@@ -1,17 +1,20 @@
 {
-  "name": "twitter-streaming-node",
-  "version": "0.0.1",
-  "author": "stewartatsafe",
+  "name": "situation-room-mapper",
+  "version": "0.1.0",
+  "author": "ttfnrob",
   "private": true,
+  "engines": {
+    "node": "0.10.x"
+  },
   "scripts": {
-    "start": "node app"
+    "start": "node server"
   },
   "dependencies": {
     "express": "*",
     "twitter": "*",
     "socket.io": "*",
     "Sentimental": "*",
-    "datasift": "*",
+    "datasift-node": "*",
     "config": "*"
   }
 }
