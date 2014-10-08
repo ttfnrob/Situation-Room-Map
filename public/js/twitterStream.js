@@ -69,11 +69,11 @@ function initialize(searchTerm) {
   var liveTweetsPos = new google.maps.MVCArray();
     heatmapPos = new google.maps.visualization.HeatmapLayer({
     data: liveTweetsPos,
-    radius: 25
+    radius: 15
   });
   var gradient = [
-    'rgba(255,255,255,0)',
-    'rgba(210,253,254,0.5)',
+    'rgba(30,244,248,0)',
+    'rgba(30,244,248,0.5)',
     'rgba(30,244,248,0.5)',
     'rgba(32,248,158,0.5)',
     'rgba(33,249,152,0.5)',
@@ -91,8 +91,8 @@ function initialize(searchTerm) {
     radius: 25
   });
   var gradient = [
-    'rgba(255,255,255,0)',
-    'rgba(250,247,213,0.25)',
+    'rgba(232,213,46,0)',
+    'rgba(232,213,46,0.25)',
     'rgba(232,213,46,0.5)',
     'rgba(234,134,46,0.5)',
     'rgba(236,128,46,0.5)',
