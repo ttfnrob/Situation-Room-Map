@@ -24,7 +24,6 @@ server.listen(process.env.PORT || 8081);
 
 //Setup rotuing for app
 app.use(express.static(__dirname + '/public'));
-app.emitter.setMaxListeners(0);
 
 //Create web sockets connection.
 io.sockets.on('connection', function (socket) {
