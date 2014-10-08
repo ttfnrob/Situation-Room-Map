@@ -109,11 +109,11 @@ function initialize(searchTerm) {
       if (pattern.test(data.text) == true) {
         if (data.sentiment.score > 0) {
           liveTweetsPos.push({location: tweetLocation, weight: data.sentiment.score});
-          liveTweetsNeg.push({location: tweetLocation, weight: 0});
+          // liveTweetsNeg.push({location: tweetLocation, weight: 0});
         }
         if (data.sentiment.score < 0) {
           liveTweetsNeg.push({location: tweetLocation, weight: (-1*data.sentiment.score)});
-          liveTweetsPos.push({location: tweetLocation, weight: 0});
+          // liveTweetsPos.push({location: tweetLocation, weight: 0});
         }
       }
 
