@@ -26,7 +26,9 @@ function initialize(searchTerm) {
     searchTerm = $("#searchBox").val();
   }
 
-  if !(typeof getUrlParameter('hide') === 'undefined') {
+  if (typeof getUrlParameter('hide') === 'undefined') {
+    // do nothing
+  } else {
     hideInterface();
   }
 
